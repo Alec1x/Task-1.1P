@@ -1,4 +1,8 @@
-﻿* {
+﻿html {
+    scroll-behavior: smooth;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -7,14 +11,17 @@ body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
 }
-.navbar {
+nav.navbar {
+    all: unset;
     display: flex;
     align-items: center;
     background-color: #eee;
     padding: 10px 20px;
-    gap:20px;
+    gap: 20px;
+    box-sizing: border-box;
 }
-.navbar a {
+
+nav.navbar a {
     text-decoration: none;
     color: inherit;
     padding: 8px 16px;
@@ -22,9 +29,10 @@ body {
     transition: background-color 0.3s ease;
 }
 
-.navbar a:hover {
+nav.navbar a:hover {
     background-color: aquamarine;
 }
+
 
 
 .hero {
@@ -37,7 +45,7 @@ body {
     background-image: url('/images/header.png');
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center bottom;   /* 👈 关键在这里！ */
+    background-position: center bottom;
     background-attachment: fixed;
     overflow: hidden;
     cursor: pointer;
@@ -131,3 +139,21 @@ body {
 .projects h2 {
     margin-bottom: 40px;
 }
+
+.footer {
+    border-top: 1px solid #ccc;
+    background-color:black;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #333;
+}
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+
+}
+
+
